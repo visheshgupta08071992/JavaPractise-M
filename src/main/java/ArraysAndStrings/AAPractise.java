@@ -555,5 +555,52 @@ public class AAPractise {
             System.out.println("No Armstrong");
         }
     }
+
+    @Test
+    public void bruteForce() {
+        int[] arr = {2, 4, 6, 8, 9, 5, 3, 12};
+        int target = 24;
+
+        Map<Integer,Integer> map = new HashMap<>();
+
+        for(int i=0;i<arr.length;i++){
+            if((target%arr[i]==0) && map.containsKey(target/arr[i])){
+                System.out.println(target + "=" + target/arr[i] + "*" + arr[i]);
+            }
+            else{
+                map.put(arr[i],i);
+            }
+        }
+    }
+
+    @Test
+    public void frequencyOfElementUsingStream(){
+        List<Integer> numbers = Arrays.asList(1, 2, 3, 2, 4, 1, 5, 2, 3, 1);
+
+        // Find frequency of each element
+        Map<Integer, Long> frequencyMap = numbers.stream().collect(Collectors.groupingBy(
+                        num -> num,
+                        Collectors.counting()
+                ));
+
+        frequencyMap.forEach((k,v) -> System.out.println(k + " " + v));
+    }
+
+    @Test
+    public void arrayEpsilon(){
+      /*  Input: 19
+        Output:[4,4,4,7]
+
+        Input: 21
+        Output: [5,5,5,6]
+
+        Input: 20
+        Output: [5,5,5,5]*/
+
+
+        int no=20;
+
+
+    }
 }
 

@@ -18,7 +18,7 @@ package JavaConceptOfTheDay;
 // Indexing : 0 1 2 3 4 5 6 7
 // Elements : 1 2 3 4 1 6 7 7
 
-import java.util.Arrays;
+import java.util.*;
 
 import org.testng.annotations.Test;
 

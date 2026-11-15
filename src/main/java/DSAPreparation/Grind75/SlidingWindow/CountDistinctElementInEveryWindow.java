@@ -13,9 +13,7 @@ Output: 3 4 4 3
 
 import org.testng.annotations.Test;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class CountDistinctElementInEveryWindow {
 

@@ -14,4 +14,12 @@ public class ReverseANoWithoutInBuiltFunction {
         }
         System.out.println(reverse);
     }
+
+    @Test
+    public void reverse1(){
+        int no=123;
+        StringBuilder sb=new StringBuilder(String.valueOf(no));
+        no = Integer.valueOf(sb.reverse().toString());
+        System.out.println(no);
+    }
 }
